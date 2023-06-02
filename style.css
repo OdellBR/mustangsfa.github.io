@@ -1,0 +1,822 @@
+/* Arquivo styles.css */
+
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #3dab97;
+}
+
+/* Estilos do logo */
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  .navbar {
+    position: relative;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+}
+
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Estilos do header */
+header {
+  background-color: #53ACAD;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.logo a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.menu li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilos do hero */
+.hero {
+  background-image: url("banner.jpg");
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 36px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #31ba8c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Estilos do próximo jogo */
+
+.next-game {
+  background-color: #53acad;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.next-game::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  border: 2px solid #f1f1f1;
+  border-radius: 10px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.next-game h2 {
+  margin: 0;
+  color: #fff;
+}
+
+.game-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.team {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.team img {
+  width: 100px; /* Ajuste o tamanho do logo conforme necessário */
+  margin-top: 15px;
+  margin-right: 15px; /* Adicione um espaçamento entre o logotipo e o nome do time */
+  margin-left: 15px;
+  border: 2px solid #ffffff; /* Cor e espessura do contorno */
+  border-radius: 50%; /* Adiciona bordas arredondadas ao contorno */
+  padding: 0px; /* Adiciona um espaço entre o contorno e a imagem */
+}
+
+.team h3 {
+  font-size: 16px; /* Ajuste o tamanho do texto conforme necessário */
+  font-weight: bold;
+  margin: 0;
+  
+}
+
+.vs {
+  display: flex;
+  align-items: center;
+}
+
+.vs p {
+  font-size: 24px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.countdown div {
+  margin-right: 10px;
+  
+}
+
+.countdown div:last-child {
+  margin-right: 0;
+}
+
+.countdown div span {
+  display: block;
+  font-size: 14px;
+}
+
+.game-date p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.saiba-mais-button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.saiba-mais-button:hover {
+  background-color: #c0e0fb;
+}
+
+
+/* Estilos dos destaques */
+.highlights {
+  background-color: #ffffff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.highlights h2 {
+  margin-bottom: 20px;
+}
+
+.highlight-items {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.highlight-item {
+  width: 300px;
+  margin: 20px;
+}
+
+.highlight-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.highlight-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.highlight-item p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.highlight-item a {
+  color: #fefefe;
+  text-decoration: none;
+}
+
+.saiba-mais-btn {
+  background-color: #53acad;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.saiba-mais-btn:hover {
+  background-color: #377d7e;
+}
+
+/* Seja um Apoiador Section */
+.supporter {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+
+.supporter .container {
+  text-align: center;
+}
+
+.supporter h2 {
+  font-size: 24px;
+  color: #53ACAD;
+  margin-bottom: 20px;
+}
+
+.supporter p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.supporter .donation-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.supporter .donation-info img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.supporter .donation-info p {
+  font-size: 16px;
+  color: #777;
+  text-align: center;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.noticia {
+  margin-bottom: 20px;
+}
+.titulo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.data {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+.conteudo {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Estilos para a seção de patrocinadores e apoiadores */
+.sponsors {
+  background-color: #ffffff;
+  padding: 40px 0;
+}
+
+.sponsors h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #53ACAD;
+  margin-bottom: 20px;
+}
+
+.sponsor-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsor-item {
+  margin: 0 20px;
+}
+
+.sponsor-item img {
+  max-width: 150px;
+  height: auto;
+}
+
+/* Estilos adicionais conforme necessário */
+
+
+/* Estilos do contato */
+.contact {
+  background-color: #53acad;
+  padding: 40px 0;
+}
+
+.contact h2 {
+  text-align: center;
+  color: #ffffff;
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 20px;
+
+  color: #ffffff;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ebebeb
+}
+
+.social-icon:hover {
+  background-color: #2e6768;
+}
+
+.social-icon i {
+  color: #53acad;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+}
+
+
+
+/* produtos */
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #53acad;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.product .product-details {
+  text-align: left;
+}
+
+.product h2 {
+  margin-top: 0;
+}
+
+.product p {
+  margin-bottom: 10px;
+}
+
+.product .price {
+  font-weight: bold;
+}
+
+.product form {
+  margin-top: 20px;
+  position: relative;
+  right: 10px;
+}
+
+.product form input,
+.product form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.product form button {
+  background-color: #2ca47c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  left: 10px;
+}
+
+.product form button:hover {
+  background-color: #006e51;
+}
+
+/* pagina sobre */
+
+main {
+  padding: 20px;
+}
+
+.timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.timeline-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #53acad;
+}
+
+.timeline-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.timeline li {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.timeline h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #53acad;
+}
+
+.timeline p {
+  font-size: 16px;
+  margin: 0;
+  color: #959595;
+}
+
+.timeline-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #53acad;
+}
+
+.timeline-year {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #53ACAD;
+  text-transform: uppercase;
+}
+
+.sobre h2 {
+  color: #53ACAD;
+}
+
+
+.team-summary {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.buy-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #45a049;
+}
+
+/* sobre */
+
+.texto-sobre {
+  text-align: center;
+  color: #313131;
+  
+}
+
+
+@media (max-width: 768px) {
+  .texto-sobre {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+  }
+}
+
+.conteudo-materia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.imagem-materia {
+  flex-shrink: 0;
+  width: 200px; /* Ajuste o valor conforme necessário */
+  margin-right: 0px;
+  margin-bottom:0px;
+}
+
+.texto-materia {
+  flex-grow: 1;
+}
+
+.texto-materia p {
+  margin-bottom: 20px;
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  .conteudo-materia {
+    flex-direction: column;
+  }
+
+  .imagem-materia {
+    margin-bottom: 10px;
+  }
+}
+
+.legenda-imagem {
+  margin-bottom: 20px;
+  font-style: italic;
+  font-size: 14px;
+  color: #888;
+}
+
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+}
+
+.logo-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.logo-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container img {
+  width: 150px;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-container {
+    flex-wrap: wrap;
+  }
+  
+  .logo-container img {
+    width: 120px;
+    margin: 10px;
+  }
+}
+
+.logo-section {
+  color: #53ACAD; /* Substitua pela cor desejada */
+}
+
+.elenco {
+  padding: 20px 0;
+  text-align: center;
+  color: #53ACAD;
+}
+
+.mosaico {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 30px;
+}
+
+.jogador {
+  width: calc(20% - 30px);
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #53ACAD;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.jogador img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.jogador h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #53acad;
+}
+
+.jogador p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #717171;
+}
+
+@media screen and (max-width: 768px) {
+  .jogador {
+    width: calc(50% - 40px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .jogador {
+    width: calc(100% - 40px);
+  }
+}
+
+.elen_time {
+  font-size: 18px;
+  color: #53acad;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+
+.contact {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.contact h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.contact-form h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  position: relative;
+  right: 5px;
+  height: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #fdfdfd;
+  border-radius: 5px;
+
+}
+
+.contact-form button {
+  padding: 10px 50px;
+  background-color: #ffffff;
+  color: #363636;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #dadada;
+}
+
+
+
+/* Estilos do footer */
+footer {
+  background-color: #53ACAD;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%; /* Adiciona essa linha para estender o rodapé */
+}
+
+
+  
